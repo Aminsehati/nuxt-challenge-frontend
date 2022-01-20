@@ -1,0 +1,108 @@
+.teacher-blog {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .teacher-box {
+    background: #fff;
+    border-radius: 6px;
+    padding-bottom: 50px;
+    .blog {
+      background: transparent;
+      border-radius: 0;
+    }
+    .bottom-wrapper{
+      padding: 30px 20px 0;
+      display: flex;
+      .right{
+        flex: 0 0 30%;
+        max-width: 30%;
+      }
+      .left{
+        flex: 0 0 70%;
+        max-width: 70%;
+      }
+    }
+    .about-heading-item h2{
+      position: relative;
+      padding-right: 15px;
+      &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: 5px;
+        height: 5px;
+        background: #29afbd;
+      }
+    }
+    .right-heading-wrapper{
+      width: 80%;
+      .right-heading-item {
+        display: inline-block;
+        span{
+          background:#eceaef;
+          margin-left: 10px;
+          padding: 12px 0;
+          min-width: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 15px;
+          color: #b6adc2;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:992px){
+  .teacher-blog .blog .blog-wrapper .content {
+    flex-wrap: wrap;
+  }
+  .teacher-blog .blog .blog-wrapper .content .right{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .blog .blog-wrapper .content .left{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .blog .blog-wrapper .content .left .top{
+    margin-bottom: 15px;
+  }
+  .teacher-blog .teacher-box .right-heading-wrapper{
+    width: 100%;
+  }
+}
+@media screen and (max-width:768px){
+  .teacher-blog .teacher-box .bottom-wrapper{
+    flex-wrap: wrap;
+  }
+  .teacher-blog .teacher-box .bottom-wrapper .right{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .teacher-blog .teacher-box .bottom-wrapper .left{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width:578px){
+  .tabs-wrapper .tabs-header .tabs-header-item{
+    flex: 0 0 auto;
+    max-width: auto;
+    flex: 1;
+  }
+}
+@media screen and (max-width:700px){
+  .tabs-wrapper .tabs-header{
+    overflow-x: auto;
+    padding-bottom: 5px;
+  }
+  .tabs-wrapper .tabs-header .tabs-header-item{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
